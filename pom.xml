@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.stech.bank</groupId>
 	<artifactId>loan</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>loan</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -41,6 +41,14 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+                <repository>
+                        <id>abc-releases</id>
+                        <name>abc-releases</name>
+                        <url>http://localhost:8081/repository/abc-releases/</url>
+                </repository>
+        </distributionManagement>
 
 	<build>
 		<plugins>
