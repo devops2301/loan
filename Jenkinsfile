@@ -22,7 +22,7 @@ pipeline {
         }
         stage('mvn deploy') {
             steps {
-                sh 'mvn deplo'
+                sh 'mvn deploy'
             }
         }
         stage('mvn sonar') {
